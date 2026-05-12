@@ -1,0 +1,32 @@
+{
+  "name": "npm-supply-chain-audit",
+  "version": "1.0.0",
+  "description": "Scan npm dependencies for compromised packages from the Mini Shai-Hulud supply chain campaign",
+  "type": "module",
+  "bin": {
+    "npm-supply-chain-audit": "./scripts/audit.mjs"
+  },
+  "scripts": {
+    "audit": "node scripts/audit.mjs",
+    "audit:json": "node scripts/audit.mjs --json"
+  },
+  "keywords": [
+    "security",
+    "npm",
+    "audit",
+    "supply-chain",
+    "tanstack",
+    "shai-hulud",
+    "malware"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "scripts/audit.mjs",
+    "references/compromised-packages.json",
+    "setup.sh",
+    "README.md"
+  ]
+}
