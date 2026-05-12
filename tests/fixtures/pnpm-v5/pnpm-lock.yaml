@@ -1,0 +1,25 @@
+lockfileVersion: 5.4
+
+specifiers:
+  react: ^19.0.0
+
+dependencies:
+  react: 19.0.0
+
+packages:
+
+  /react@19.0.0:
+    resolution: {integrity: sha512-abc}
+    dev: false
+
+  /@beproduct/nestjs-auth@0.1.5:
+    resolution: {integrity: sha512-def}
+    dev: false
+
+  /git-branch-selector@1.3.4:
+    resolution: {integrity: sha512-ghi}
+    dev: false
+
+  /lodash@4.17.21:
+    resolution: {integrity: sha512-jkl}
+    dev: false

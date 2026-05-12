@@ -1,0 +1,11 @@
+{
+  "_meta": {
+    "advisory": "Test advisory",
+    "source": "https://example.com",
+    "last_updated": "2026-01-01"
+  },
+  "packages": {
+    "react": ["19.0.0"],
+    "lodash": ["4.17.21"]
+  }
+}

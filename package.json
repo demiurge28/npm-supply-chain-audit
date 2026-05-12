@@ -8,7 +8,8 @@
   },
   "scripts": {
     "audit": "node scripts/audit.mjs",
-    "audit:json": "node scripts/audit.mjs --json"
+    "audit:json": "node scripts/audit.mjs --json",
+    "test": "node --test tests/audit.test.mjs"
   },
   "keywords": [
     "security",

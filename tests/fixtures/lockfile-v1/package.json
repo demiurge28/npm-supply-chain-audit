@@ -1,0 +1,7 @@
+{
+  "name": "lockfile-v1-project",
+  "version": "1.0.0",
+  "dependencies": {
+    "some-lib": "^1.0.0"
+  }
+}

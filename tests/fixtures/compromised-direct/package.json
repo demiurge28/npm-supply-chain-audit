@@ -1,0 +1,11 @@
+{
+  "name": "compromised-direct",
+  "version": "1.0.0",
+  "dependencies": {
+    "@tanstack/react-router": "1.169.5",
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@mistralai/mistralai": "2.2.3"
+  }
+}

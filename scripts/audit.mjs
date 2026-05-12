@@ -139,7 +139,8 @@ function scanYarnLock(dir) {
   //   "package@^version":        (v1)
   //   "package@npm:^version":    (berry)
   //     version "1.2.3"          or  version: 1.2.3
-  const entryRe = /^"?(@?[^@\n]+)@[^:]*:?\n/gm;
+  // Require leading " to avoid matching resolved/integrity lines.
+  const entryRe = /^"(@?[^@\n]+)@[^\n]*:\s*\n/gm;
   const versionRe = /^\s+version[: ]+"?([^"\n]+)"?/gm;
 
   let entryMatch;
@@ -311,7 +312,24 @@ function formatReport(results, meta) {
 }
 
 // ---------------------------------------------------------------------------
-// Main
+// Exports (for testing)
+// ---------------------------------------------------------------------------
+
+export {
+  parseArgs,
+  loadCompromisedPackages,
+  scanPackageJson,
+  scanPackageLockJson,
+  scanYarnLock,
+  scanPnpmLock,
+  discoverProjectDirs,
+  auditProject,
+  formatReport,
+  DEFAULT_PACKAGES_PATH,
+};
+
+// ---------------------------------------------------------------------------
+// Main (only runs when executed directly, not when imported)
 // ---------------------------------------------------------------------------
 
 async function main() {
@@ -353,7 +371,13 @@ async function main() {
   }
 }
 
-main().catch((err) => {
-  console.error("Audit failed:", err.message);
-  process.exit(2);
-});
+const isDirectRun =
+  process.argv[1] &&
+  resolve(process.argv[1]) === resolve(fileURLToPath(import.meta.url));
+
+if (isDirectRun) {
+  main().catch((err) => {
+    console.error("Audit failed:", err.message);
+    process.exit(2);
+  });
+}

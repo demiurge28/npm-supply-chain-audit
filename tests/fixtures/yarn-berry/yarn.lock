@@ -1,0 +1,18 @@
+__metadata:
+  version: 8
+  cacheKey: 10
+
+"react@npm:^19.0.0":
+  version: 19.0.0
+  resolution: "react@npm:19.0.0"
+  checksum: abc123
+
+"@mistralai/mistralai@npm:^2.2.0":
+  version: 2.2.4
+  resolution: "@mistralai/mistralai@npm:2.2.4"
+  checksum: def456
+
+"express@npm:^4.18.0":
+  version: 4.18.2
+  resolution: "express@npm:4.18.2"
+  checksum: ghi789

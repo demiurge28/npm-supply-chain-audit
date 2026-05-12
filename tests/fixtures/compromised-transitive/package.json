@@ -1,0 +1,7 @@
+{
+  "name": "compromised-transitive",
+  "version": "1.0.0",
+  "dependencies": {
+    "some-framework": "^3.0.0"
+  }
+}

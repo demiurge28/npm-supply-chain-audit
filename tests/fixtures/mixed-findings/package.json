@@ -1,0 +1,10 @@
+{
+  "name": "mixed-findings",
+  "version": "1.0.0",
+  "dependencies": {
+    "@tanstack/react-router": "1.169.5"
+  },
+  "devDependencies": {
+    "safe-action": "0.8.4"
+  }
+}

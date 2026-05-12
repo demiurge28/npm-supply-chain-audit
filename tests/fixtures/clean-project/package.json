@@ -1,0 +1,12 @@
+{
+  "name": "clean-project",
+  "version": "1.0.0",
+  "dependencies": {
+    "react": "^19.0.0",
+    "next": "^15.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "eslint": "^9.0.0"
+  }
+}
